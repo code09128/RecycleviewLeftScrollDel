@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--item布局，自定义View-->
+<com.drs24.recycleviewleftscrolldel.LeftSlideView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="@android:color/white"
+    android:layout_marginBottom="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <!--"设置"，"删除"按钮使用了TextView而不是Button，是因为５.０以上版本使用Button会显示在上层产出错误显示-->
+        <!--<TextView-->
+            <!--android:id="@+id/tv_set"-->
+            <!--android:layout_height="106dp"-->
+            <!--android:layout_width="80dp"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_toRightOf="@+id/layout_content"-->
+            <!--android:text="设置"-->
+            <!--android:textSize="25dp"-->
+            <!--android:background="@drawable/orange_background"-->
+            <!--android:textColor="#DDFFFFFF"-->
+            <!--/>-->
+        <LinearLayout
+            android:id="@+id/layout_content"
+            android:layout_width="334dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/orange_background"
+                android:text="123"
+                android:textColor="#dde65b05"
+                android:textSize="50dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_delete"
+            android:layout_height="match_parent"
+            android:layout_width="80dp"
+            android:gravity="center"
+            android:text="删 除"
+            android:textSize="25dp"
+            android:background="@drawable/pink_background"
+            android:textColor="#DDFFFFFF" />
+
+    </LinearLayout>
+
+</com.drs24.recycleviewleftscrolldel.LeftSlideView>
